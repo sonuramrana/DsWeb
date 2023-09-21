@@ -1,0 +1,45 @@
+$color-black: #000000;
+$color-white: #ffffff;
+$primary-color: $color-black;
+$secondary-color: #fc0d5e;
+$tertiary-color: #ef5d25;
+$darkGrey-color: #111111;
+$grey-color: #cccccc;
+$lightGrey-color: #fafafa;
+$lightPink-color: #fff2ed;
+$gradient-color: linear-gradient(to right, #fc4906, #fc0d5e);
+
+//styleguide background classes autgeneration variables.
+$site-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "tertiary": $tertiary-color,
+  "darkGrey": $darkGrey-color,
+  "grey": $grey-color,
+  "lightGrey": $lightGrey-color,
+  "lightPink": $lightPink-color,
+  "white": $color-white,
+  "gradient": $gradient-color,
+);
+// Poppins Font family Variables
+$poppinsFont-family: "Poppins", sans-serif;
+$font-weight-Regular: 400;
+$font-weight-Medium: 500;
+$font-weight-SemiBold: 600;
+$font-weight-Bold: 700;
+
+// Heading Fontsizes variables.
+$h1-fontsize: 100px;
+$h2-fontsize: 40px;
+$h3-fontsize: 36px;
+$h4-fontsize: 24px;
+$h5-fontsize: 20px;
+$h6-fontsize: 18px;
+
+// Paragraph fontsizes variables.
+$paragraph-large: 18px;
+$paragraph-regular: 16px;
+
+// Link Color variable
+$link-color: $color-black;
+$link-hover-color: #fc4906;

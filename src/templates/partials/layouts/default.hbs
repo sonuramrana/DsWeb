@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="{{ this.meta.description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ this.title }}</title>
+    <!-- Poppins Font family starts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Poppins Font family End -->
+    <link rel="stylesheet" href="./Content/css/style.css">
+    <link href="./Content/images/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    {{#>header }}
+      {{> global/header @root.header }}
+    {{/header}}
+    <main role="main">
+      {{#>content}}{{/content}}
+    </main>
+    {{#>footer}}
+      {{> global/footer @root.footer }}
+    {{/footer}}
+    {{#>foot}}
+      <script src="./Content/scripts/vendor.min.js"></script>
+      <script src="./Content/scripts/main.js"></script>
+      <script src="./Content/scripts/custom-js/accordion.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+      <script>
+        VANTA.GLOBE({
+          el: "#hero",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xf03b3b,
+          color2: 0xf52c2c,
+          backgroundColor: 0xffffff
+        })
+      </script>
+    {{/foot}}
+  </body>
+</html>

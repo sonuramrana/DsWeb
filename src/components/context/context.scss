@@ -1,0 +1,111 @@
+.context-wrapper {
+  background-image: url("../../Content/images/context.jpg");
+  background-position: center;
+  background-size: cover;
+
+.context-main{
+    padding: 40px 0 0px;
+    @include desktop{
+      padding: 40px 60px 0px;
+    }
+    
+    .context-pri-content {
+        color: $color-white;
+        .context-title {
+          color: $color-white;
+          font-weight: $font-weight-SemiBold;
+          font-size: $h2-fontsize;
+          font-family: $poppinsFont-family;
+        }
+        .context-para {
+          border-left: 5px solid coral;
+          border-radius: 2px;
+    
+          .context-description {
+            font-size: $paragraph-large;
+            font-weight: $font-weight-Regular;
+            font-family: $poppinsFont-family;
+            margin-left: 20px;
+          }
+        }
+      }
+      .context-secondary {
+        margin-top: 12rem;
+        .col {
+            padding: 20px;
+            flex: 0 0 auto;
+            width: 50%;
+            .col-title{
+                color: #ffffff;
+              }
+               @include mobile-portrait{
+            &:nth-child(5n + 2),
+            &:nth-child(5n + 3),
+            &:nth-child(5n + 6),
+            &:nth-child(5n + 7),
+            &:nth-child(5n + 10){
+               background-color: white;
+              .col-title{
+                color: #212529;
+              }
+            }
+            &.bg-transaprent:nth-child(5n + 3){
+               background-color: transparent;
+              .col-title{
+                color: #ffffff;
+              }
+            }
+          }
+            @include desktop{
+               flex: 0 0 auto;
+               width: 20%;
+           
+            /* Apply white background to even-numbered divs among the first six divs */
+            &:nth-child(5n + 2),
+            &:nth-child(5n + 4) {
+              background-color: white;
+              .col-title{
+                color: #212529;
+              }
+            }
+
+            /* Apply white background to odd-numbered divs among the next six divs */
+            &:nth-child(5n + 6),
+            &:nth-child(5n + 8),
+            &:nth-child(5n + 10) {
+              background-color: white;
+              .col-title{
+                color: #212529;
+              }
+            }
+            &.bg-transaprent:nth-child(5n + 2),
+            &.bg-transaprent:nth-child(5n + 4){
+              background-color: transparent;
+              .col-title{
+                color: #ffffff;
+              }
+            }
+             }
+            .col-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                height: 100%;
+                
+               
+                .col-title{
+                    text-transform: uppercase;
+                    font-size: $h5-fontsize;
+                    font-family: $poppinsFont-family;
+                    font-weight: $font-weight-Medium;
+                    margin-top: 10px;
+                }
+            }
+            
+        }
+      }
+}
+ 
+}

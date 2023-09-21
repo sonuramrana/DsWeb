@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Running pre-commit checks."
+
+jiraname="TASK" #Please change this according to your Project name
+nojira="NOJIRA"
+
+# Get the current branch and apply it to a variable
+currentbranch=`git branch | grep \* | cut -d ' ' -f2`
+# Test current branch name
+if [[ "$currentbranch" =~ ^(release|hotfix|feature|bug)/($jiraname|$nojira)-[0-9]+-[a-z0-9-]+ ]]
+then
+  echo "$currentbranch is properly formatted"
+  echo " "
+else
+  echo "$currentbranch: branch name should be in the following format:"
+  echo "Example:"
+  echo "Feature: feature/$jiraname-001-hello-world"
+  echo "Bug: bug/$jiraname-001-hello-world"
+  echo "Hotfix: hotfix/$jiraname-001-hello-world"
+  echo "Release: release/$jiraname-001-hello-world"
+  echo " "
+  exit 1
+fi

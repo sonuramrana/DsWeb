@@ -1,0 +1,116 @@
+.blocks-wrapper {
+    font-family: $poppinsFont-family;
+    .container-fluid{
+ padding: 0;
+    @include desktop{
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+    }
+   
+    .blocks-bg-img{
+        background-image: url("../../Content/images/blocks-bg.png");
+        background-size: cover;
+        background-position: center;
+      
+     .block-coral{
+        background-color: $tertiary-color;
+        .block-service{
+            height: 31rem;
+            .block-title{
+                color: $color-white;
+                font-weight: $font-weight-SemiBold;
+                font-size: $h2-fontsize;
+               
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+        }
+     }
+       .block-item{
+        position: relative;
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0;
+        @include desktop{
+           flex: 1 0 0%;
+           width: auto;
+            padding-left: 7.5px;
+        padding-right: 7.5px;
+        }
+        &:hover{
+            .block-content{display: block;}
+        }
+       }
+        .block-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 31rem;
+            .icon-img{
+                margin-bottom: 12px;
+            }
+            .icon-title{
+              font-size: $h6-fontsize;
+              
+              font-weight: $font-weight-SemiBold;
+              text-transform: uppercase;
+              color: white;
+            }
+            .block-divider{
+                border-top: 5px solid #fc4906;
+                border-radius: 3px;
+                width: 25%;
+            }
+           
+        }
+       .block-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left:0;
+        bottom: 0;
+        padding: 20px;
+        display: none;
+        background: linear-gradient( white 50%,  #ffffff 50%);
+        transition: background 0.2s linear;
+        background-size: 100% 200%;
+        background-position: 100% 100%;
+        .block-web-title{
+                font-size: $h5-fontsize;
+                text-transform: uppercase;
+                font-weight: $font-weight-SemiBold;
+                margin-bottom: 0;
+            }
+            .block-web-divider{
+                border-top: 5px solid coral;
+                border-radius: 3px;
+                width: 25%;
+                margin:12px 0px ;
+            }
+            .block-web-para{
+                font-size: 16px;
+            }
+            .block-link{
+                font-size: 16px;
+                text-decoration: none;
+                pointer-events: none;
+                color: coral;
+            }
+
+       }
+            .col:hover{
+                background: linear-gradient( white 50%,  #fc4906 50%);
+                transition: background 0.2s linear;
+                background-size: 100% 200%;
+                background-position: 100% 100%;
+            }
+        
+       
+
+    }
+}

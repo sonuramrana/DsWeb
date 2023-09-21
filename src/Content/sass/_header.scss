@@ -1,0 +1,102 @@
+.header {
+    width: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    &-wrapper {
+        display: flex;
+        padding: 16.5px 35px;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        .navbar-toggler{
+        span.icon{
+            font-size: 26px;
+        }
+    }
+    }
+
+    &--right {
+        margin-left: auto;
+    }
+
+    &--left {
+        margin-right: 50px;
+    }
+    &--navigation{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @include desktop {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.navigation-wrapper {
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        @include desktop{
+            flex-direction: row;
+        }
+
+        ul {
+            flex-direction: column;
+            position: absolute;
+            background-color: #fff;
+            display: none;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+        }
+    }
+
+    >ul {
+        >li {
+            >a {
+                padding: 10px 15px;
+                display: block;
+                text-decoration: none;
+                position: relative;
+            }
+
+            &.submenu {
+                >a {
+                    padding-right: 30px;
+
+                    &:after {
+                        content: "\f107";
+                        font-family: 'FontAwesome';
+                        color: #ef5d25;
+                        padding-left: 5px;
+                        position: absolute;
+                        font-weight: 600;
+                        right: 10px;
+                        top: 12px;
+                    }
+                }
+                &:hover{
+                    >{
+                        ul{
+                            display: block;
+                            width: 100%;
+                            background-color: #ffffff;
+                            z-index: 999;
+                            @include desktop{
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

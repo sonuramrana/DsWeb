@@ -1,0 +1,90 @@
+.blog-wrapper{
+    margin: 50px 0px;
+   
+    .blog-heading{
+        background: $gradient-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: $h2-fontsize;
+        font-family: $poppinsFont-family;
+        font-weight: $font-weight-SemiBold;
+    }
+    .blog-card{
+        margin-bottom: 40px;
+        @include desktop{
+            margin-bottom: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .blog-card-img{
+            position: relative;
+            .card-primary-img{
+                border-radius: 50px 0px 50px 0px;
+            }
+            .top-items{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+            .card-date{
+                background-color: #ef5e25;
+                font-size: 14px;
+                font-weight: $font-weight-Medium;
+                font-family: $poppinsFont-family;
+                border-radius: 4px;color:#ffffff;
+                padding: 4px 10px;
+                
+            }
+            .card-icon{
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+                
+               .card-icon-views{
+                 font-family: $poppinsFont-family;
+                font-size: $paragraph-regular;
+                font-weight: $font-weight-Regular;
+                padding-left:5px;
+               }
+            }
+        }
+        .blog-card-content{
+            font-family: $poppinsFont-family;
+            margin-top: 20px;
+            .blog-card-title{
+               font-size: $h5-fontsize;
+               font-weight: $font-weight-SemiBold;
+              width: 90%;
+            }
+            .blog-card-para{
+               font-size: $paragraph-regular;
+               font-weight: $font-weight-Regular;
+                width: 90%;
+            }
+            .blog-card-link{
+                text-decoration: none;
+                background: $gradient-color;
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+               font-weight: $font-weight-Medium;
+               font-size: $h6-fontsize;
+            }
+        }
+      
+    }
+    .blog-view-all{
+        margin-top: 50px;
+        text-align: center;
+        font-size: $h6-fontsize;
+           font-family: $poppinsFont-family;
+           font-weight: $font-weight-Medium;
+        .blog-view-more{
+            background-color: $secondary-color  ;
+            border: none;
+            border-radius: 20px;
+           padding: 10px 20px;
+           
+        }
+     
+    }
+}

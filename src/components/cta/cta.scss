@@ -1,0 +1,26 @@
+.cta-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .cta-content {
+    margin-top: 10%;
+    .cta-title {
+      font-size: $h2-fontsize;
+      font-weight: $font-weight-SemiBold;
+      font-family: $poppinsFont-family;
+    }
+    .cta-btn {
+      font-size: $h6-fontsize;
+      font-family: $poppinsFont-family;
+      font-weight: $font-weight-Medium;
+      background-color: $secondary-color;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+  }
+  .cta-img{
+    .cta-border{
+        border-radius: 25px;
+    }
+  }
+}

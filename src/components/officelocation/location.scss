@@ -1,0 +1,215 @@
+.office-wrapper {
+    font-family: $poppinsFont-family;
+  
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+  
+      .office-card {
+        border: 2px $color-white;
+        .office-bg-img-1 {
+          background-image: url("../../Content/images/office.jpg");
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          &::before{
+              content: '';
+              position: absolute;
+              top:0;
+              bottom: 0;
+              left:0;
+              right:0;
+              background-color: rgba(0,0,0,.5);
+          }
+          .office-content-wrapper {
+            // height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            text-align: left;
+            padding: 20px 30px;
+            .office-location {
+              font-size: $h5-fontsize;
+              font-weight: $font-weight-SemiBold;
+              color: $color-white;
+            }
+            .office-address {
+              margin-bottom: 0;
+              font-weight: $font-weight-SemiBold;
+              font-size: $h6-fontsize;
+            }
+            .office-contact {
+              font-size: $h6-fontsize;
+              font-weight: $font-weight-SemiBold;
+            }
+          }
+        }
+      }
+      .office-bg-img-2 {
+        background-image: url("../../Content/images/office.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        &::before{
+              content: '';
+              position: absolute;
+              top:0;
+              bottom: 0;
+              left:0;
+              right:0;
+              background-color: rgba(0,0,0,.5);
+          }
+        .office-content-wrapper {
+          // height: 20rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          text-align: left;
+          padding: 20px 30px;
+          position: relative;
+          .office-location {
+            font-size: $h5-fontsize;
+            font-weight: $font-weight-SemiBold;
+            color: $color-white;
+          }
+          .office-address {
+            margin-bottom: 0;
+            font-weight: $font-weight-SemiBold;
+            font-size: $h6-fontsize;
+            width: 100%;
+          }
+          .office-contact {
+            font-size: $h6-fontsize;
+            font-weight: $font-weight-SemiBold;
+          }
+        }
+      }
+      .office-card-3 {
+        flex: 2;
+        .office-bg-img-3 {
+          background-image: url("../../Content/images/office-3.jpg");
+          background-position: center;
+          background-size: cover;
+          height: 100%;
+          position: relative;
+          &::before{
+              content: '';
+              position: absolute;
+              top:0;
+              bottom: 0;
+              left:0;
+              right:0;
+              background-color: rgba(0,0,0,.5);
+          }
+          .office-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            text-align: left;
+            padding: 20px 30px;
+            position: relative;
+            .office-head {
+              position: relative;
+              .office-location {
+                font-size: $h5-fontsize;
+                font-weight: $font-weight-SemiBold;
+                color: $color-white;
+              }
+              .office-patch {
+                border-radius: 5px;
+                background-color: $tertiary-color;
+                position: absolute;
+                top: 0;
+                left: 28%;
+                font-size: $h6-fontsize;
+                font-weight: $font-weight-SemiBold;
+                color: $color-white;
+                padding: 0px 10px;
+              }
+            }
+            .office-address, .office-contact, .office-email {
+              margin-bottom: 0;
+              font-weight: $font-weight-SemiBold;
+              font-size: $h6-fontsize;
+            }
+           
+            
+          }
+        }
+      }
+      .office-bg-img-4 {
+        background-image: url("../../Content/images/office.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+         &::before{
+              content: '';
+              position: absolute;
+              top:0;
+              bottom: 0;
+              left:0;
+              right:0;
+              background-color: rgba(0,0,0,.5);
+          }
+        .office-content-wrapper {
+          // height: 20rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          text-align: left;
+          padding: 32px 30px;
+          position: relative;
+          .office-location {
+            font-size: $h5-fontsize;
+            font-weight: $font-weight-SemiBold;
+            color: $color-white;
+          }
+          .office-address, .office-contact {
+            margin-bottom: 0;
+            font-weight: $font-weight-SemiBold;
+            font-size: $h6-fontsize;
+          }
+        }
+      }
+      .office-bg-img-5 {
+        background-image: url("../../Content/images/office.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+         &::before{
+              content: '';
+              position: absolute;
+              top:0;
+              bottom: 0;
+              left:0;
+              right:0;
+              background-color: rgba(0,0,0,.5);
+          }
+        .office-content-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+          padding: 32px 30px;
+          position: relative;
+          .office-location {
+            font-size: $h5-fontsize;
+            font-weight: $font-weight-SemiBold;
+            color: $color-white;
+          }
+          .office-address, .office-contact {
+            margin-bottom: 0;
+            font-weight: $font-weight-SemiBold;
+            font-size: $h6-fontsize;
+          }
+         
+        }
+      }
+    }
+  }
+  

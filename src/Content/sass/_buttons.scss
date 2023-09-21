@@ -1,0 +1,32 @@
+.btn{
+    font-size: 18px;
+    line-height: 24px;
+    &--primary {
+        padding: 5.5px 20px;
+        min-width: 140px;
+        background: linear-gradient(to right, #fc4906, #fc0d5e);
+        border-radius: 28px;
+        position: relative;
+        color: #000;
+        z-index: 9;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            left: 1px;
+            background-color: white;
+            border-radius: 28px;
+            z-index: -1;
+        }
+        &:hover {
+            background: #fc4906;
+            color:#fff;
+            &::after{
+                background:transparent;
+            }
+        }
+    }
+    
+}

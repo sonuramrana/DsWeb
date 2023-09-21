@@ -1,0 +1,120 @@
+.tabs-wrapper {
+    padding: 0;
+    overflow-x: hidden;
+    .tabs-head {
+        ul.nav {
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-between;
+            @include desktop{
+                flex-direction: row;
+            }
+
+            li {
+                width: 100%;
+                border: .5px solid white;
+                @include desktop{
+                width: calc(100% / 4);
+                }
+                button {
+                    margin: auto;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    width: 100%;
+                    background-color: #2f2f2d;
+                    border: none;
+                    color: white;
+                    font-size: 20px;
+                    height: 100%;
+
+                    &.active {
+                        border: none;
+                        background: linear-gradient(to right, #FC4906 0%, #FC0D5E 100%);
+                        -webkit-background-clip: border-box;
+                        -webkit-text-fill-color: white;
+                    }
+                    &:hover {
+                        background: linear-gradient(to right, #FC4906 0%, #FC0D5E 100%);
+                        -webkit-background-clip: border-box;
+                        -webkit-text-fill-color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .tabs-body {
+        background-color: #2f2f2d;
+
+        .tab-content {
+            .tab-pane {
+                background-image: url("../../Content/images/tabs-layer.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                .tabs-details {
+                    .tabs-title {
+                        padding-top: 50px;
+                        @include desktop{
+                            padding-top: 150px;
+                        }
+                        p {
+                            font-size: 40px;
+                            line-height: 40px;
+                            color: white;
+                            font-weight: 500;
+                        }
+                    }
+                    .tabs-description {
+                        margin-top: 44px;
+
+                        p {
+                            padding: 10px 0 10px 30px;
+                            border-left: 5px solid red;
+                            font-size: 18px;
+                            line-height: 30px;
+                            color: white;
+                            display: block;
+                            border-image: linear-gradient(to right, #FC4906 0%, #FC0D5E 100%) 50;
+                        }
+                        a {
+                            padding-left: 35px;
+                            margin-top: 30px;
+                            display: block;
+                            text-decoration: none;
+                            font-size: 18px;
+                            color: white;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .tabs-partners {
+                    margin-top: 150px;
+                    
+                    > * {
+                        margin: 0 auto;
+                    }
+                    p {
+                        text-align: center;
+                        font-size: 36px;
+                        color: white;
+                        font-weight: 500;
+
+                        span {
+                            color: #ec5a24;
+                        }
+                    }
+                    img {
+                        margin-top: 50px;
+                        display: block;
+                        padding-bottom: 50px;
+                        @include desktop{
+                            padding-bottom: 150px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
